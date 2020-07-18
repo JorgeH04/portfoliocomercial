@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MY || PORTFOLIO</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/isotopecss.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> </head>
+
+<body>
+      <div id="HOME"> 
+    <div class="topbar">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">JH.</a> </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#HOME">Home</a></li>
+                        <li><a href="#ABOUT">About</a></li>
+                        <li><a href="#SERVICE">Service</a></li>
+                        <li><a href="#PROTFOLIO">Protfolio</a></li>
+                        <li><a href="#COMMENT">Comment</a></li>
+                        <li><a href="#EDUCATION">Education</a></li>
+                        <li><a href="#CONTACT">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+    <!--      Home PART -->
+    <div class="bacgoumd_part">
+        <div class="col-md-5">
+            <div class="part_one">
+                <!--    Home left Side-->
+                <div class="one"> <img src="images/3559cc032c566c1a1bbdf0e900cf5116%20-%20Copy.jpg"> </div>
+            </div>
+            <!--    Home left Side End-->
+        </div>
+        <div class="col-md-7">
+            <div class="part_two">
+                <!--    Home Right Side-->
+                <div id="particles-js">
+                    <h1>HELLO, I AM RADWAN</h1>
+                    <p>I'm Front-End Web Developer & Designer.</p>
+                </div>
+            </div>
+            <!--    Home Right Side End-->
+        </div>
+    </div>
+    </div>
+    <!--      Home PART End -->
+
+     
+
+    
+          {{{ body  }}} 
+        
+
+
+
+
+  <!-- CONTACT PART END-->
+    <div class="footer">
+        <!-- FOOTER PART START-->
+        <div class="container">
+            <div class="footer_upper wow zoomInUp" data-wow-duration="1s" data-wow-delay="0s">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="ph_num text-center">
+                            <p>+8801796226729 <span><i class="fa fa-phone" aria-hidden="true"></i></span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="Email text-center">
+                            <p>radwancse503@gmail.com <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></p>
+                            <p>anikkhanak945@gmail.com<span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="Address text-center">
+                            <p>Dhanmondi,DIU Hall <span><i class="fa fa-map-marker" aria-hidden="true"></i></span></p>
+                            <p>Dhaka,Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social_site">
+                <a href="https://www.facebook.com/anik503" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/radwan-ahmed-b52950100/" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/radwananik/?hl=en" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <p>copyright by© Radwan 2017 All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <!--      FOOTER PART  END-->
+    <!--       for scroll top-->
+    <diV class="scrol"> <a href="#" class="scrollup">Scroll</a> </diV>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/isotape.function.js"></script>
+    <script src="js/main.js"></script>
+    <!--     one page scroll -->
+    <script>
+        $(document).ready(function () {
+            $('.nav li a').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var $target = $(this.hash);
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                    if ($target.length) {
+                        var targetOffset = $target.offset().top;
+                        $('html,body').animate({
+                            scrollTop: targetOffset
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollup').fadeIn();
+                }
+                else {
+                    $('.scrollup').fadeOut();
+                }
+            });
+            $('.scrollup').click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 600);
+                return false;
+            });
+        });
+    </script>
+       <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<div class="col-md-4 mx-auto">
+  <div class="card text-center">
+    <div class="card-header">
+      <h3>Agregue otra calculadora</h3>
+    </div>
+    <div class="card-body">
+      <form action="/fruta/new-fruta" method="POST">
+        <div class="form-group">
+          <input type="text" name="imagePath" class="form-control" placeholder="imagen" autofocus/>
+        </div>
+       <div class="form-group">
+          <input type="text" name="producto" class="form-control" placeholder="sabor" autofocus/>
+        </div>
+         <div class="form-group">
+          <input type="text" name="precio" class="form-control" placeholder="sabor" autofocus/>
+        </div>
+       
+        <div class="form-group">
+          <button class="btn btn-primary btn-block" type="submit">
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+    <div id="pricing" class="pricing">
+    <div class="container">
+        <div class="row">
+        {{#each precios}}
+            <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.2s">
+                <div class="packages">
+               <article class="product">
+                <div class="img-container">
+                  <img src="{{imagePath}}" alt="product" class="product-img" />
+                </div>
+                <h3>{{ sabor }}</h3>
+                <h3>${{ precio }}</h3>
+        <h4 class="card-title d-flex justify-content-between align-items-center">
+           <a href="/precios/edit/{{_id}}">Actualizar precio</a>
+        </h4>
+        <!-- DELETE REQUEST -->
+        <a class="btn btn-danger" href="/precios/delete/{{_id}}">
+              Eliminar
+          </a>
+      </div>              </article>
+                </div>
+            </div>
+          {{/each}}
+
+        </div>
+    </div>
+</div>
+

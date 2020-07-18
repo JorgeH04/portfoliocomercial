@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Heladería Alessandro || Lomas del Mirador</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="/css/agency.min.css" rel="stylesheet">
+  <link href="/css/agency.css" rel="stylesheet">
+
+
+
+</head>
+
+<body id="page-top">
+
+  <a class="btn btn-danger" href="/">
+              Volver al inicio
+  </a>
+
+
+<div class="col-md-4 mx-auto mt-5">
+  <div class="card text-center">
+    <div class="card-header">
+      <h3>Agregue otro sabor</h3>
+    </div>
+    <div class="card-body">
+      <form action="/crema/new-crema" method="POST">
+        <div class="form-group">
+          <input type="text" name="imagePath" class="form-control" placeholder="image" autofocus/>
+        </div>
+       <div class="form-group">
+          <input type="text" name="sabor" class="form-control" placeholder="product" autofocus/>
+        </div>
+        <div class="form-group">
+          <input type="text" name="price" class="form-control" placeholder="precio" autofocus/>
+        </div>
+       
+        <div class="form-group">
+          <button class="btn btn-primary btn-block" type="submit">
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+ <div class="row mt-5">
+        {{#each crema}}
+      <div class="col-md-3 wow slideInDown">
+       <div class="card"> 
+            <img class="card-img-top img-fluid" alt="img1" src="{{imagePath}}">
+          
+          <div class="card-body">
+        <div class="card-heading">{{ sabor }}</div>
+        <p class="card-text">${{ price }}</p>
+        <h4 class="card-title d-flex justify-content-between align-items-center">
+           <a class="btn btn-success" href="/crema/edit/{{_id}}">Actualizar</a>
+        </h4>
+        <!-- DELETE REQUEST -->
+         <a class="btn btn-danger" href="/crema/delete/{{_id}}">
+              Eliminar
+          </a>
+        <a class="btn btn-pink text-light"><i class="fa f-plus" aria-hidden="true"></i> </a> </div>
+        </div>
+  </div>
+          {{/each}}
+
+
+</div>
+     
+</div>
+</div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
+    
